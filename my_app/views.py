@@ -8,3 +8,7 @@ def home(request):
 
 def home_param(request, post_id):
     return HttpResponse('Olá mundo! %s' % post_id)
+
+def post_list(request):
+    name = 'Rafael Ramos'
+    return render(request, 'post_list.html', {'name': name})
